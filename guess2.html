@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZK | Guess the Number!</title>
+    <link rel="stylesheet" href="guess2.css">
+    <script src="https://kit.fontawesome.com/408b96fa10.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <h2><i>AZK</i></h2>
+    <div id="container">
+        <h1 class="container2" id="heading"> Guess the Number !</h1>
+        <div class="container2" id="box1">
+            <label class="player1_box" id="label1">Player 1</label> <br> <br>    <!-- gave each element inside this box a class so that i can make them disappear when the winner is displayed-->
+            <label class="player1_box" id="text">Guess a number between 1 - 100</label> <br> <br>
+            <input class="player1_box" id="input1" type="number" max="100" min="1"> <br> <br>
+            <button class="player1_box" id="button1">Submit</button>
+            <p class="player1_box" id="final_text1"></p>
+        </div>
+        <div class="container2" id="box2">
+            <label class="player2_box" id="label2">Player 2</label> <br> <br>
+            <label class="player2_box" id="text">Guess a number between 1 - 100</label> <br> <br>
+            <input class="player2_box" id="input2" type="number" max="100" min="1"> <br> <br>
+            <button class="player2_box" id="button2">Submit</button>
+            <p class="player2_box" id="final_text2"></p>
+        </div>
+    </div>
+
+    <!--<i id="happy_emoji" class="fa-solid fa-face-grin-beam fa-beat"></i> 
+    <i id="sad_emoji" class="fa-solid fa-face-frown fa-beat"></i>-->
+
+<!-- ATTEMPTS COUNTER-->
+    <div id="attempts_display1">
+        <p id="attempts_count1"></p> <br> <!-- so that the no of attempts can be displayed-->
+    </div>
+    <div id="attempts_display2">
+        <p id="attempts_count2"></p>
+    </div>
+
+    <!--<i id="trophy_emoji" class="fa-solid fa-trophy fa-beat"></i>--> <!-- trophy emoji-->
+    <p id="final_text3"></p>
+
+    <script src="guess2.js"></script>
+
+</body>
+</html>
