@@ -39,6 +39,9 @@ document.getElementById("button1").onclick = function(){
     if(myinput1 > 100 || myinput1 < 0){ // checking if the input is within the range
         final_text1.textContent = "Enter a number between 1 - 100";
     }
+    else if(myinput1 == ""){
+        final_text1.textContent = "Enter a number between 1 - 100";
+    }
     else{ //if the input IS WITHIN RANGE then do this:
         if(myinput1 > answer1){
             final_text1.textContent = "Too High! try again";
@@ -70,6 +73,9 @@ document.getElementById("button2").onclick = function(){
 
     if(myinput2 > 100 || myinput2 < 0){ // checking if the input is within the range
         final_text1.textContent = "Enter a number between 1 - 100";
+    }
+    else if(myinput2 == ""){
+        final_text2.textContent = "Enter a number between 1 - 100";
     }
     else{ //if the input IS WITHIN RANGE then do this:
         if(myinput2 > answer2){
@@ -122,4 +128,5 @@ function checkIfGameOver(){
         }
     }
 }
+
 console.log(answer1 , answer2);
