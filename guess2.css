@@ -1,7 +1,7 @@
 body{
     background-color:hsl(279, 100%, 93%);
 }
-h2{
+h2{   /* AZK heading */
     font-size:70px;
     padding:0;
     margin:0;
@@ -11,20 +11,26 @@ h2{
 #container{
     text-align:center;
 }
-#heading{
+#heading2{ /* heading for guess2.html */
     font-size:4em;
     margin:30px;
     font-family:'Trebuchet MS';
     transform:translate(0%, 0%); /* so that the heading is FIXED in its position*/
 }
-#box1{
+.game_container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#box1{ 
     width:300px;
     height:340px;
     border: black 2px solid;
     border-radius:20px;
+    margin:80px;
     /*transform: translateX(50%); /* moves the element 50% of its own width to the RIGHT */
     /*transform: translateY(50%); /* moves the element 50% of its own height DOWNWARD */
-    transform: translate(200% , 40%); /* the first one (X) moves right and the second one (Y) moves down */
+    /* the first one (X) moves right and the second one (Y) moves down */
     box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
     background-color:hsl(200, 100%, 78%);
 }
@@ -40,7 +46,8 @@ h2{
     height:340px;
     border: black 2px solid;
     border-radius:20px;
-    transform: translate(395% , -60%); /* the first one (X) moves right and the second one (Y) moves down */
+    margin:80px;
+     /* the first one (X) moves right and the second one (Y) moves down */
     box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
     background-color:hsl(200, 100%, 78%);
 }
@@ -64,7 +71,7 @@ h2{
     border: 4px solid hsl(200, 100%, 25%);
     background-color:hsl(200, 100%, 85%);
 }
-#button1{        /* SUBMIT buttons*/
+#button1{        /* -- SUBMIT buttons -- */
     background-color:hsl(200, 100%, 78%);
     border-radius:10px;
     border: 4px solid hsl(200, 100%, 25%);
@@ -74,6 +81,7 @@ h2{
     cursor:pointer;
 }
 #button1:hover{
+    scale:1.1;
     background-color:hsl(200, 100%,68%);
 }
 #button2{
@@ -86,6 +94,7 @@ h2{
     cursor:pointer;
 }
 #button2:hover{
+    scale:1.1;
     background-color:hsl(200, 100%,68%);
 }
 
@@ -109,17 +118,25 @@ h2{
     font-size:2.5em;
     font-style:italic;
     font-family:Verdana;
-    transform: translate(40%, -620%);
+    text-align:center;
+    position:relative;
+    bottom:150px;
 }
 
-/* ATTEMPTS COUNTER */
+/* --ATTEMPTS COUNTER--  */
+.attempts_container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 #attempts_display1{
     width:60px;
     height:60px;
     border: 2px solid black;
     border-radius:10px;
     background-color:rgb(168, 168, 255);
-    transform:translate(1500% , -750%);
+    position:relative;
+    bottom:400px;
 }
 #attempts_count1{
     font-size:35px;
@@ -134,7 +151,9 @@ h2{
     border-radius:10px;
     background-color:rgb(168, 168, 255);
     font-size:35px;
-    transform:translate(2448% , -850%);
+    position: relative;
+    bottom:400px;
+    left:400px;
 }
 #attempts_count2{
     font-size:35px;
@@ -142,33 +161,22 @@ h2{
     position:relative;
     bottom:26px;    
 }
-/*.fa-solid.fa-face-grin-beam.fa-beat{
-    display:none;
-    position:relative;
-    top:-420px;
-    right:-680px;
-    font-size:150px;
-}
-.fa-solid.fa-face-frown.fa-beat{
-    display:none;
-    position:relative;
-    top:-420px;
-    right:-1115px;
-    font-size:150px;
-}
-*/
+
+
 
 /*                 name_input_page.html                 */
 
-
-#input_player1{
+#heading1{
+    font-size:4em;
+    margin:30px;
+    font-family:'Trebuchet MS';
+}
+#input_player1{  /* Player 1 box */
     background-color:hsl(279, 100%, 78%);
     width:300px;
     height:300px;
     text-align:center;
-    position: relative;
-    right:-600px;
-    bottom: -12px;
+    margin:20px;
     border: 5px hsl(279, 100%, 20%) dashed;
     border-radius:50px;
 }
@@ -187,14 +195,12 @@ h2{
     bottom:-20px;
 }
 
-#input_player2{
+#input_player2{  /* Player 2 box */
     background-color:hsl(279, 100%, 78%);
     width:300px;
     height:300px;
     text-align:center;
-    position: relative;
-    right:-1180px;
-    top:-295px;
+    margin:20px;
     border: 5px hsl(279, 100%, 20%) dashed;
     border-radius:50px;
 }
@@ -219,6 +225,7 @@ h2{
     font-family:sans-serif;
     font-weight:bold;
     font-style:italic;
+    color:hsl(0, 57%, 24%);
 }
 #input_text2{
     position:relative;
@@ -227,10 +234,11 @@ h2{
     font-family:sans-serif;
     font-weight:bold;
     font-style:italic;
+    color:hsl(0, 57%, 24%);
 }
 #startgamebtn{
     position:relative;
-    top:-250px;
+    top:30px;
     left:-8px;
     font-size:30px;
     background-color:hsl(300, 92%, 29%);
@@ -242,8 +250,18 @@ h2{
     transition:0.1s;
 }
 #startgamebtn:hover{
+    border: black 3px solid;
+    scale:1.3;
     background-color:hsl(247, 67%, 44%);
 }
 a{     /* link inside the startgamebtn */  
     text-underline-position:none;  
+}
+#container2{
+    text-align:center;
+}
+.input_container{
+    display:flex;
+    justify-content:center; /* Horizontal center */
+    align-items:center;  /* Vertical center */
 }
