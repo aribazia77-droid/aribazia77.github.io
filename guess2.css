@@ -276,7 +276,7 @@ a{     /* link inside the startgamebtn */
     }
     .input_container {
         display:block;
-        width:100%;
+        width:90%;
     }
     #input_player1{  /* Player 1 box */
         background-color:hsl(279, 100%, 78%);
@@ -320,6 +320,7 @@ a{     /* link inside the startgamebtn */
         transition:0.1s;
     }
 }
+
 
 
 
