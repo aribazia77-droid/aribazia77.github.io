@@ -271,6 +271,9 @@ a{     /* link inside the startgamebtn */
 /* <600px 601px 768px 992px 1200px --- STANDARD BREAKPOINTS */ 
 
 @media only screen and (max-width: 600px){ /* everything below 600px */
+    #container2{
+        display:block;
+    }
     .input_container {
         display:block;
         width:100%;
@@ -317,6 +320,7 @@ a{     /* link inside the startgamebtn */
         transition:0.1s;
     }
 }
+
 
 
 
