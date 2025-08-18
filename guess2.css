@@ -307,9 +307,9 @@ a{     /* link inside the startgamebtn */
     }
     #startgamebtn{
         display:block;
+        text-align: center;
         position:relative;
-        top:30px;
-        left:150px;
+        left:100px;
         font-size:30px;
         background-color:hsl(300, 92%, 29%);
         border-radius:50px;
@@ -320,6 +320,7 @@ a{     /* link inside the startgamebtn */
         transition:0.1s;
     }
 }
+
 
 
 
