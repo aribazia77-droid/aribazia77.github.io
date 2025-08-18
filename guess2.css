@@ -325,6 +325,14 @@ a{     /* link inside the startgamebtn */
         width:90%;
         display: block;
     }
+    #heading2{
+        font-size:4em;
+        margin:30px;
+        font-family:'Trebuchet MS';
+        text-align:center;
+        position:relative;
+        left:30px;
+    }
     .heading2{
         text-align:center;
     }
@@ -338,7 +346,7 @@ a{     /* link inside the startgamebtn */
         border: black 2px solid;
         border-radius:20px;
         position:relative;
-        left:55px;
+        left:35px;
         /*transform: translateX(50%); /* moves the element 50% of its own width to the RIGHT */
         /*transform: translateY(50%); /* moves the element 50% of its own height DOWNWARD */
         /* the first one (X) moves right and the second one (Y) moves down */
@@ -351,7 +359,7 @@ a{     /* link inside the startgamebtn */
         border: black 2px solid;
         border-radius:20px;
         position:relative;
-        left:55px;
+        left:35px;
         /* the first one (X) moves right and the second one (Y) moves down */
         box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
         background-color:hsl(200, 100%, 78%);
@@ -378,6 +386,7 @@ a{     /* link inside the startgamebtn */
         left:-170px;
     }
 }
+
 
 
 
