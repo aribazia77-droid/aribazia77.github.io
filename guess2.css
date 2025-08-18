@@ -322,6 +322,7 @@ a{     /* link inside the startgamebtn */
     
     /* MAIN GAME PAGE */
     #container{
+        width:90%;
         display: block;
     }
     .heading2{
@@ -363,7 +364,7 @@ a{     /* link inside the startgamebtn */
         background-color:rgb(168, 168, 255);
         position:relative;
         bottom:800px;
-        right:130px;
+        right:100px;
     }
     #attempts_display2{
         width:60px;
@@ -374,9 +375,10 @@ a{     /* link inside the startgamebtn */
         font-size:35px;
         position: relative;
         bottom:375px;
-        left:-200px;
+        left:-170px;
     }
 }
+
 
 
 
