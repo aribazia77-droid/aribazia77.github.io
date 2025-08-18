@@ -265,9 +265,43 @@ a{     /* link inside the startgamebtn */
     justify-content:center; /* Horizontal center */
     align-items:center;  /* Vertical center */
 }
-@media (max-width: 400px){
-    #container{
-        width: 100%;
+
+/* --MOBILE VERSION-- */
+
+/* <600px 601px 768px 992px 1200px --- STANDARD BREAKPOINTS */ 
+
+@media only screen and (max-width: 600px){ /* everything below 600px */
+    .input_container {
+        display:block;
+        width:100%;
+    }
+    #input_player1{  /* Player 1 box */
+        background-color:hsl(279, 100%, 78%);
+        width:300px;
+        height:300px;
+        text-align:center;
+        margin:20px;
+        border: 5px hsl(279, 100%, 20%) dashed;
+        border-radius:50px;
+    }
+    #input_box1{
+        font-size:25px;
+        width:180px;
+        border:none;
+        border-bottom: 5px solid black;
+        border-radius:15px;
+        position: relative;
+        bottom:-20px;
+    }
+    #input_box2{
+        font-size:25px;
+        width:180px;
+        border:none;
+        border-bottom: 5px solid black;
+        border-radius:15px;
+        position: relative;
+        bottom:-20px;
     }
 }
+
 
