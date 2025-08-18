@@ -319,7 +319,65 @@ a{     /* link inside the startgamebtn */
         color:hsl(207, 100%, 95%);
         transition:0.1s;
     }
+    
+    /* MAIN GAME PAGE */
+    #container{
+        display: block;
+    }
+    .heading2{
+        text-align:center;
+    }
+
+    .game_container{
+        display:block;
+    }
+    #box1{ 
+        width:300px;
+        height:340px;
+        border: black 2px solid;
+        border-radius:20px;
+        position:relative;
+        left:55px;
+        /*transform: translateX(50%); /* moves the element 50% of its own width to the RIGHT */
+        /*transform: translateY(50%); /* moves the element 50% of its own height DOWNWARD */
+        /* the first one (X) moves right and the second one (Y) moves down */
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+        background-color:hsl(200, 100%, 78%);
+    }
+    #box2{
+        width:300px;
+        height:340px;
+        border: black 2px solid;
+        border-radius:20px;
+        position:relative;
+        left:55px;
+        /* the first one (X) moves right and the second one (Y) moves down */
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+        background-color:hsl(200, 100%, 78%);
+    }
+    #attempts_display1{
+        width:60px;
+        height:60px;
+        border: 2px solid black;
+        border-radius:10px;
+        background-color:rgb(168, 168, 255);
+        position:relative;
+        bottom:800px;
+        left:230px;
+    }
+    #attempts_display2{
+        width:60px;
+        height:60px;
+        border: 2px solid black;
+        border-radius:10px;
+        background-color:rgb(168, 168, 255);
+        font-size:35px;
+        position: relative;
+        bottom:375px;
+        left:168px;
+    }
 }
+
 
 
 
