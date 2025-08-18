@@ -271,21 +271,26 @@ a{     /* link inside the startgamebtn */
 /* <600px 601px 768px 992px 1200px --- STANDARD BREAKPOINTS */ 
 
 @media only screen and (max-width: 600px){ /* everything below 600px */
+    h2{  
+        font-size:50px;
+        padding:0;
+        margin:0;
+        position:relative;
+        right:-10px;
+    }
     #container2{
         display:block;
+    }
+    #heading1{
+        font-size:4em;
+        margin:30px;
+        font-family:'Trebuchet MS';
+        position:relative;
+        left:28px;
     }
     .input_container {
         display:block;
         width:90%;
-    }
-    #input_player1{  /* Player 1 box */
-        background-color:hsl(279, 100%, 78%);
-        width:300px;
-        height:300px;
-        text-align:center;
-        margin:20px;
-        border: 5px hsl(279, 100%, 20%) dashed;
-        border-radius:50px;
     }
     #input_box1{
         font-size:25px;
@@ -309,7 +314,7 @@ a{     /* link inside the startgamebtn */
         display:block;
         text-align: center;
         position:relative;
-        left:90px;
+        left:145px;
         font-size:30px;
         background-color:hsl(300, 92%, 29%);
         border-radius:50px;
@@ -331,12 +336,8 @@ a{     /* link inside the startgamebtn */
         font-family:'Trebuchet MS';
         text-align:center;
         position:relative;
-        left:30px;
+        left:25px;
     }
-    .heading2{
-        text-align:center;
-    }
-
     .game_container{
         display:block;
     }
@@ -346,7 +347,7 @@ a{     /* link inside the startgamebtn */
         border: black 2px solid;
         border-radius:20px;
         position:relative;
-        left:35px;
+        left:20px;
         /*transform: translateX(50%); /* moves the element 50% of its own width to the RIGHT */
         /*transform: translateY(50%); /* moves the element 50% of its own height DOWNWARD */
         /* the first one (X) moves right and the second one (Y) moves down */
@@ -359,7 +360,7 @@ a{     /* link inside the startgamebtn */
         border: black 2px solid;
         border-radius:20px;
         position:relative;
-        left:35px;
+        left:20px;
         /* the first one (X) moves right and the second one (Y) moves down */
         box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
         background-color:hsl(200, 100%, 78%);
@@ -372,7 +373,7 @@ a{     /* link inside the startgamebtn */
         background-color:rgb(168, 168, 255);
         position:relative;
         bottom:800px;
-        right:100px;
+        right:120px;
     }
     #attempts_display2{
         width:60px;
@@ -383,9 +384,10 @@ a{     /* link inside the startgamebtn */
         font-size:35px;
         position: relative;
         bottom:375px;
-        left:-170px;
+        left:-185px;
     }
 }
+
 
 
 
