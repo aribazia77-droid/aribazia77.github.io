@@ -265,3 +265,9 @@ a{     /* link inside the startgamebtn */
     justify-content:center; /* Horizontal center */
     align-items:center;  /* Vertical center */
 }
+@media (max-width: 400px){
+    #container{
+        width: 100%;
+    }
+}
+
